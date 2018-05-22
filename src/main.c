@@ -75,6 +75,7 @@ int	main(int ac, char **av, char **env)
 {
 	path_t path;
 	envi_t *envi = NULL;
+	path.line.save = NULL;
 
 	(void)ac;
 	(void)av;
