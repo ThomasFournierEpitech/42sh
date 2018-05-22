@@ -7,13 +7,18 @@
 
 #include "my.h"
 
+void	top_arrow(line_t *all)
+{
+}
 void	arrow_control(line_t *all)
 {
 	char d = getchar();
 	char t = getchar();
 
-	if (d == 91 && t == 65)
+	if (d == 91 && t == 65) {
+		top_arrow(all);
 		write(1, "fleche de haut\n", 15);
+	}
 	if (d == 91 && t == 66)
 		write(1, "fleche de bas\n", 14);
 	if (d == 91 && t == 68 && all->pos > 0) {

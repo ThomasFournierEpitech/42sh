@@ -10,12 +10,20 @@
 
 struct fptr;
 
+typedef struct save_s
+{
+	char *str;
+	struct save_s *next;
+	struct save_s *prev;
+} save_t;
+
 typedef struct line_s
 {
 	char *str;
 	int pos;
 	int ver;
 	char *path;
+	save_t *save;
 } line_t;
 
 typedef struct path {

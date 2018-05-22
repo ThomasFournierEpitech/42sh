@@ -17,6 +17,7 @@ int	short_control(char c, line_t *all)
 			delete_character(all);
 			return (0);
 		case 10:
+			save_str_enter(all);
 			return (1);
 		case 9:
 			//tab

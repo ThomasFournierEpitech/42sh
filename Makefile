@@ -46,6 +46,7 @@ control =	src/control/line.c				\
 		src/control/add_character.c			\
 		src/control/delete_character.c			\
 		src/control/display_terminal.c			\
+		src/control/save_enter_str.c			\
 
 OBJ	=	$(SRC:.c=.o)
 

@@ -96,5 +96,6 @@ char	*my_strcat_control(char *dest, char *src, int pos);
 void	display_term(char *s, int pos, char *pwd);
 void	start_cycle(line_t *all);
 char	*line(line_t *all, char *s);
+void	save_str_enter(line_t *all);
 
 #endif
